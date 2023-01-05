@@ -1,0 +1,12 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    border: 2px solid red;
+    position: relative;
+}
+form{
+    position: absolute;
+    border: 2px solid blue;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<link rel=icon href=/favicon.ico type="image/ico"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Smart Question Paper Generator- ADAMAS</title>
+        <link rel="stylesheet" type="text/css" href="try1.css" />      
+        <link href="Adamas Logo.jpg" rel="icon"/>
+        <!--[if lt IE 7]>
+                <style type="text/css">
+                        #wrapper { height:100%; }
+                </style>
+        <![endif]-->
+
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Fqjl6XhPuvJvbUActsL4JM2aTtFigzDbLysbRDEhfYP-0FeBYH2cO_LwqeuFENXD" charset="UTF-8"></script><script type="text/javascript">
+
+function setOptions(chosen)
+{
+
+var selbox = document.formName.streams;
+selbox.options.length = 0;
+selbox.options[selbox.options.length] = new Option('Select','');if (chosen == 'B.Tech') {selbox.options[selbox.options.length]=new Option('CSE','CSE',false,false); selbox.options[selbox.options.length]=new Option('BIOTECH','BIOTECH',false,false); selbox.options[selbox.options.length]=new Option('CIVIL','CIVIL',false,false); selbox.options[selbox.options.length]=new Option('CSEAIML(H)','CSEAIML(H)',false,false); selbox.options[selbox.options.length]=new Option('EE','EE',false,false); selbox.options[selbox.options.length]=new Option('ECE','ECE',false,false); selbox.options[selbox.options.length]=new Option('ME','ME',false,false); selbox.options[selbox.options.length]=new Option('BE','BE',false,false); selbox.options[selbox.options.length]=new Option('FT','FT',false,false); selbox.options[selbox.options.length]=new Option('CSECS(H)','CSECS(H)',false,false); selbox.options[selbox.options.length]=new Option('MEDE(H)','MEDE(H)',false,false); }
+
+}
+</script>
+</head>
+<style> 
+        body {
+          background-image: url("Campus.jpg");
+        }
+        </style>
+<body onLoad="setOptions(document.formName.course.options[document.formName.course.selectedIndex].value);">
+         
+<img src="Adamas Logo.jpg" height="150px" width="200px">     
+ 
+<center>
+
+<h1>SMART QUESTION PAPER GENERATOR</h1>
+
+                
+<!-- </td></tr></table> -->
+<center>
+
+<hr />
+
+<form name="formName" method="post" >
+
+
+<strong><font color=red>*</font>Name of the program:</strong> 
+<select name='course' size=1 onChange="setOptions(document.formName.course.options[document.formName.course.selectedIndex].value);">
+        <option value="">Select</option>
+	<!-- <option value="B.Arch">B.Arch </option>
+	<option value="B.Optm">B.Optm </option>
+	<option value="B.Pharm">B.Pharm </option>
+	<option value="B.Sc(H)">B.Sc(H) </option> -->
+	<option value="B.Tech">B.Tech </option>
+	<!-- <option value="BBA">BBA </option>
+	<option value="BBA(H)">BBA(H) </option>
+	<option value="BCA">BCA </option>
+	<option value="BHM">BHM </option>
+	<option value="BHSM">BHSM </option>
+	<option value="BIRM">BIRM </option>
+	<option value="BMS(H)">BMS(H) </option>
+	<option value="BNS">BNS </option>
+	<option value="BSCM">BSCM </option>
+	<option value="BSM">BSM </option>
+	<option value="BTTM">BTTM </option>
+	<option value="CHE">CHE </option>
+	<option value="HM">HM </option>
+	<option value="M.Pharm">M.Pharm </option>
+	<option value="M.Phil">M.Phil </option>
+	<option value="M.Sc">M.Sc </option>
+	<option value="M.Tech">M.Tech </option>
+	<option value="MBA">MBA </option>
+	<option value="MCA">MCA </option>
+	<option value="MHA">MHA </option>
+	<option value="MHMCT">MHMCT </option>
+	<option value="MMA">MMA </option>
+	<option value="PBIR">PBIR </option>
+	<option value="PGDGI">PGDGI </option> -->
+</select><!-- <br /> -->
+<strong><font color=red>*</font>Stream:</strong>
+<select name="streams" size="1">
+	<option value="" >--- Select ---</option>
+</select>
+<!-- *Stream: <input type="text" name="Streams">>
+29<br />1B.Arch => 0=>Arch<br /><br />1B.Optm => 0=>Optm<br /><br />1B.Pharm => 0=>Pharm<br /><br />4B.Sc(H) => 0=>BT<br />B.Sc(H) => 1=>GE<br />B.Sc(H) => 2=>Microbio<br />B.Sc(H) => 3=>Molbio<br /><br />21B.Tech => 0=>APM<br />B.Tech => 1=>AUE<br />B.Tech => 2=>BME<br />B.Tech => 3=>BT<br />B.Tech => 4=>CE<br />B.Tech => 5=>CHE<br />B.Tech => 6=>CSE<br />B.Tech => 7=>CT<br />B.Tech => 8=>ECE<br />B.Tech => 9=>EE<br />B.Tech => 10=>EEE<br />B.Tech => 11=>EIE<br />B.Tech => 12=>FT<br />B.Tech => 13=>ICE<br />B.Tech => 14=>IT<br />B.Tech => 15=>LT<br />B.Tech => 16=>ME<br />B.Tech => 17=>MRE<br />B.Tech => 18=>PE<br />B.Tech => 19=>PWE<br />B.Tech => 20=>TT<br /><br />1BBA => 0=>BBA<br /><br />3BBA(H) => 0=>BBA(H)<br />BBA(H) => 1=>BIRM<br />BBA(H) => 2=>BSCM<br /><br />1BCA => 0=>BCA<br /><br />1BHM => 0=>BHM<br /><br />1BHSM => 0=>BHSM<br /><br />1BIRM => 0=>BIRM<br /><br />1BMS(H) => 0=>BMS(H)<br /><br />1BNS => 0=>BNS<br /><br />1BSCM => 0=>BSCM<br /><br />1BSM => 0=>BSM<br /><br />1BTTM => 0=>BTTM<br /><br />1CHE => 0=>CHE<br /><br />1HM => 0=>HM<br /><br />1M.Pharm => 0=>Pharm<br /><br />3M.Phil => 0=>MAT<br />M.Phil => 1=>MGMT<br />M.Phil => 2=>MS<br /><br />5M.Sc => 0=>BT<br />M.Sc => 1=>GE<br />M.Sc => 2=>IS<br />M.Sc => 3=>MSGEN<br />M.Sc => 4=>SE<br /><br />47M.Tech => 0=>AEIE<br />M.Tech => 1=>AUE<br />M.Tech => 2=>BL<br />M.Tech => 3=>BME<br />M.Tech => 4=>BT<br />M.Tech => 5=>CE<br />M.Tech => 6=>CHE<br />M.Tech => 7=>CI<br />M.Tech => 8=>CPT<br />M.Tech => 9=>CSE<br />M.Tech => 10=>CT<br />M.Tech => 11=>ECE<br />M.Tech => 12=>EDPS<br />M.Tech => 13=>EE<br />M.Tech => 14=>EECI<br />M.Tech => 15=>EEPS<br />M.Tech => 16=>EIE<br />M.Tech => 17=>FT<br />M.Tech => 18=>GTE<br />M.Tech => 19=>IEM<br />M.Tech => 20=>IT<br />M.Tech => 21=>LT<br />M.Tech => 22=>MBIN<br />M.Tech => 23=>MC<br />M.Tech => 24=>MCNT<br />M.Tech => 25=>MCP<br />M.Tech => 26=>MCS<br />M.Tech => 27=>MComm<br />M.Tech => 28=>MDC<br />M.Tech => 29=>ME<br />M.Tech => 30=>MMS<br />M.Tech => 31=>MSS<br />M.Tech => 32=>MT<br />M.Tech => 33=>MTI<br />M.Tech => 34=>MTT<br />M.Tech => 35=>MVD<br />M.Tech => 36=>Microbio<br />M.Tech => 37=>Molbio<br />M.Tech => 38=>PE<br />M.Tech => 39=>PHMB<br />M.Tech => 40=>PHMC<br />M.Tech => 41=>PHY<br />M.Tech => 42=>PS<br />M.Tech => 43=>SE<br />M.Tech => 44=>STE<br />M.Tech => 45=>TT<br />M.Tech => 46=>VLSI<br /><br />1MBA => 0=>MBA<br /><br />1MCA => 0=>MCA<br /><br />1MHA => 0=>MHA<br /><br />1MHMCT => 0=>FBN<br /><br />1MMA => 0=>MMA<br /><br />7PBIR => 0=>CH<br />PBIR => 1=>CHE<br />PBIR => 2=>Microbio<br />PBIR => 3=>Molbio<br />PBIR => 4=>PHMB<br />PBIR => 5=>PHMC<br />PBIR => 6=>PHY<br /><br />1PGDGI => 0=>GI<br /> -->
+<strong><font color=red>*</font>Semester:</strong>
+<select name='sem'>
+            <option value="">Select</option>
+           <option value="Sem-1" > Sem-1  </option>
+                       <option value="Sem-2" > Sem-2  </option>
+                       <option value="Sem-3" > Sem-3  </option>
+                       <option value="Sem-4" > Sem-4  </option>
+                       <option value="Sem-5" > Sem-5  </option>
+                       <option value="Sem-6" > Sem-6  </option>
+                       <option value="Sem-7" > Sem-7  </option>
+                       <option value="Sem-8" > Sem-8  </option>
+                    </select>
+	  
+<strong><font color=red>*</font>Paper Title:</strong> 
+<select name='Paper Title'>
+        <option value="">Select</option>
+        <option value="TOC" > TOC  </option>
+        <option value="IOT" > IOT  </option>
+        <option value="DBMS" > DBMS  </option>
+        <option value="CN" > CN  </option>
+        <option value="JAVA" > JAVA   </option>
+        <option value="CA" > CA  </option>
+        <option value="AIML" > AIML  </option>
+        <option value="PATTERN" > PATTERN  </option>
+</select>
+            
+
+<strong><font color=red>*</font>Paper Code:</strong> 
+<select name='Paper Code'>
+        <option value="">Select</option>
+        <option value="CSE11319" > CSE11319  </option>
+        <option value="EEC43128" > EEC43128  </option>
+        <option value="CSE11316" > CSE11316  </option>
+        <option value="ECS43104" > ECS43104  </option>
+        <option value="CSE11306" > CSE11306  </option>
+        <option value="ECS43103" > ECS43103  </option>
+        <option value="ECS43106" > ECS43106  </option>
+        <option value="ECS43112" > ECS43112  </option>
+</select>
+
+<!-- Paper name: <input type="text" name="P_Name"> -->
+<input type=submit name=submit value=Submit style="background-color:greenyellow; color:black; font-weight: bold;" />
+
+</form>
+<hr />
+</body>
+</html> 
+
+
+
+
+
+
+

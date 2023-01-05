@@ -1,0 +1,94 @@
+app.post("/", (req, res) => {
+
+  var user = new signupModel({
+    name : req.body.Name;
+  })
+
+  var pass = req.body.pass;
+  var cpass = req.body.cpass;
+
+  if(pass === cpass){
+    var user = new signupModel({
+      name : req.body.Name;
+    })
+  }
+})
+
+========================================== 2nd ==================================
+app.post("/", (req, res) => {
+
+  var user = new signupModel({
+    Name : req.body.name
+  })
+
+  var registerd =  user.save();
+  console.log(registerd)
+})
+
+======================================================================================
+
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "./public/uploads");
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+var upload = multer({ storage: storage });
+
+=======================================================================================
+app.get("/value", (req, res) => {
+  res.render("dropdown2",{
+    "car": req.body.car
+  })
+})
+
+=======================================================================================
+mongoose.connection.db.collection('dropdowndatas').count(function(err, count) {
+    console.dir(err);
+    console.dir(count);
+
+    if( count == 0) {
+        var value = new dropdownModel({
+          value: 1,
+          name: car,
+          bus: bus,
+          car: car
+        })
+        value.save();
+      }
+    else {
+        
+    }
+});
+
+================================================================================================
+var value = new dropdowModel({
+    car: car,
+    bus: bus,
+    bike: bike
+  })
+  var upsertData = value.toObject();
+
+// Delete the _id property, otherwise Mongo will return a "Mod on _id not allowed" error
+  delete upsertData._id;
+
+// Do the upsert, which works like this: If no Contact document exists with 
+// _id = contact.id, then create a new doc using upsertData.
+// Otherwise, update the existing doc with upsertData
+  dropdowModel.update({_id: value.id}, upsertData, {upsert: true});
+  res.redirect("/dropdown");
+===================================================================================
+const updateDocument = async (value) => {
+          const result = await dropdowndata.updateOne(
+            { value },
+            {
+              $set: { car: car },
+              $set: { bus: bus },
+              $set: { bike: bike },
+            }
+          );
+        };
+        updateDocument(1);

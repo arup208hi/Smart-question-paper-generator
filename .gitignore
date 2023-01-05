@@ -1,0 +1,8 @@
+node_modules/
+API/
+models/
+PDF/
+Images/
+public/
+python/
+templates/
